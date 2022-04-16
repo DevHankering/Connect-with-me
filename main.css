@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+}
+body{
+  background:#07c url(./img-5.jpg) center / cover no-repeat fixed;
+  color:#224;
+  position:relative;
+}
+#dp{
+  background:url(./dp-img.jpeg) center / cover;
+  width:96px;
+  height:96px;
+  border-radius:50%;
+  margin-top:20px;
+  border:2px solid #d51419;
+}
+#name{
+  color:#d2d5e7;
+  font-size:1.3em;
+  font-family: 'Permanent Marker', cursive;
+  border:2px solid #d51419;
+  border-radius:30px;
+  padding:10px;
+  margin:20px;
+}
+#dp-and-name{
+  display:flex;
+  flex-flow:column;
+  align-items:center;
+}
+#main-box{
+  display:flex;
+  flex-flow:column wrap;
+  align-items:center;
+  /* border:4px solid red; */
+  max-width:680px;
+  margin:auto;
+  align-items:stretch;
+  justify-content:space-between;
+}
+
+.card{
+  text-decoration:none;
+  color:black;
+  font-size:1.3em;
+  font-weight:bold;
+  font-family: 'Titillium Web', sans-serif;
+  border:2px solid black;
+  line-height:68px;
+  text-align:center;
+  margin-bottom:16px;
+  background-color:rgba(255,255,255, .45);
+  border-radius:20px;
+  border:1px solid rgba(255, 255, 255, .25);
+  backdrop-filter:blur(15px);
+  background: linear-gradient(120deg,
+              rgba(255, 255, 255, .25),
+              rgba(255, 255, 255, .75), 70%,
+              rgba(255, 255, 255, .25)
+    );
+  box-shadow:
+        inset 4px 4px 5px 0 rgba(255, 255, 255, .25),
+        inset -4px -4px 5px 0 rgba(0, 0, 0, 0.125),
+        0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+        transition:all 0.2s ease-in-out;  
+    }
+
+
+    .card:last-child{
+      margin-bottom:110px;
+    }
+
+    .card:hover{
+      transform: scale(1.3);
+
+    }
+
+    footer{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 80px;
+      background-color:silver;
+      box-shadow:inset 0px 1px 10px black;
+     };
